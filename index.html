@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Side Navigation Bar </title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxl-c-plus-plus'></i>
+                <div class="logo_name">Digisight</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="">
+                    <i class='bx bx-search' ></i>
+                    <input type="text" placeholder="Search..">
+                </a>
+                <span class="looltip">Search</span>
+               
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-grid-alt' ></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="looltip">Dashboard</span>
+                
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-search' ></i>
+                    <span class="links_name">User</span>
+                </a>
+                <span class="looltip">User</span>
+                <!--<span class="looltip">Dashboard</span>-->
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-chat' ></i>
+                    <span class="links_name">Message</span>
+                </a>
+                <span class="looltip">Message</span>
+                <!--<span class="looltip">Dashboard</span>-->
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-pie-chart-alt-2' ></i>
+                    <span class="links_name">Analitics</span>
+                </a>
+                <span class="looltip">Analytics</span>
+                <!--<span class="looltip">Dashboard</span>-->
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-folder' ></i>
+                    <span class="links_name">File manager</span>
+                </a>
+                <span class="looltip">File manager</span>
+                <!--<span class="looltip">Dashboard</span>-->
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-cart' ></i>
+                    <span class="links_name">Order</span>
+                </a>
+                <span class="looltip">Order</span>
+                <!--<span class="looltip">Dashboard</span>-->
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-heart' ></i>
+                    <span class="links_name">Saved</span>
+                </a>
+                <span class="looltip">Saved</span>
+                <!--<span class="looltip">Dashboard</span>-->
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-cog' ></i>
+                    <span class="links_name">Setting</span>
+                </a>
+                <span class="looltip">Setting</span>
+              
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="profile.jpg" alt="">
+                    <div class="name_job">
+                        <div class="name">Mr john</div>
+                        <div class="job">web designer   </div>
+
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out" ></i>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="home_content">
+        <div class="text"> Home content </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script> 
+let btn = document.querySelector("#btn");
+let sidebar = document.querySelector(".sidebar");
+let searchBtn = document.querySelector(".bx-search");
+
+btn.onclick = function()  {
+    sidebar.classList.toggle("active");
+
+};
+searchBtn.onclick =  function()  {
+    sidebar.classList.toggle("active");
+
+};
+
+</script>
+
+
+</body>
+</html>
